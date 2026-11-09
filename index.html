@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Video Paylas</title>
+<style>
+  body{margin:0;background:#121212;color:#e8e8ea;font:16px/1.65 -apple-system,"Segoe UI",Roboto,sans-serif}
+  main{max-width:680px;margin:0 auto;padding:48px 20px 40px}
+  h1{font-size:28px;margin:0 0 8px}
+  .sub{color:#8e8e93;margin:0 0 28px}
+  h2{font-size:18px;margin:28px 0 8px}
+  p{margin:0 0 12px}
+  a{color:#7aa2f7}
+  footer{margin-top:40px;padding-top:18px;border-top:1px solid #2a2a2d;font-size:14px;color:#8e8e93}
+  footer a{margin-right:16px}
+</style>
+</head>
+<body>
+<main>
+  <h1>Video Paylas</h1>
+  <p class="sub">Personal video scheduling tool</p>
+
+  <p>Video Paylas is a personal automation tool used only by its owner. It reads a private
+  content plan from the owner's Google Sheet, takes the owner's own video files from the
+  owner's Google Drive, and uploads them to the owner's own YouTube, Instagram and TikTok
+  accounts at the times the owner schedules.</p>
+
+  <p>The tool does not have public sign-up, does not serve other users, and does not collect
+  or store data about anyone except its owner.</p>
+
+  <h2>How it works</h2>
+  <p>1. The owner adds video files to a private Google Drive folder and schedules them in a
+  private Google Sheet.</p>
+  <p>2. A scheduled job runs in the owner's private GitHub repository, downloads the due
+  video, and publishes it through the official platform APIs.</p>
+  <p>3. The result (published link or error) is written back to the owner's private sheet.</p>
+
+  <h2>Platform connections</h2>
+  <p>The tool uses official APIs: YouTube Data API, Instagram Graph API and TikTok Content
+  Posting API. Access is authorized once by the owner through each platform's login screen.
+  Access tokens are stored in the owner's private Google Sheet and in private repository
+  secrets, and are never shared with third parties.</p>
+
+  <footer>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+    <a href="https://github.com/muuratyaaman/video-paylas-bilgi">Contact</a>
+  </footer>
+</main>
+</body>
+</html>
